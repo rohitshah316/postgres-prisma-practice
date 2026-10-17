@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS users(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(200) UNIQUE NOT NULL,
+    age INT CHECK (age>=18),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
