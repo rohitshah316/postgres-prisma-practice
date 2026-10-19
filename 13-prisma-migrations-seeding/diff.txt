@@ -1,0 +1,27 @@
+Command
+What it does
+Typical use
+
+npx prisma migrate dev
+Creates and applies migrations; checks schema drift
+Local development
+
+npx prisma migrate deploy
+Applies pending migrations without creating new ones
+Staging and production
+
+npx prisma migrate reset
+Resets the development database and reapplies migrations
+Disposable development data
+
+npx prisma db push
+Synchronizes schema changes without creating migration history
+Prototyping
+
+npx prisma db seed
+Runs your configured seed script
+Populate test/development data
+
+npx prisma generate
+Generates Prisma Client from your schema
+After schema changes
